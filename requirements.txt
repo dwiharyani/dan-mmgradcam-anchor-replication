@@ -1,0 +1,8 @@
+# Lightweight post-training alignment, analysis and visualization.
+# Model training uses upstream authors' separately documented environments.
+numpy>=1.24,<3
+pandas>=2.0,<3
+scipy>=1.10,<2
+Pillow>=10,<13
+matplotlib>=3.7,<4
+h5py>=3.9,<4

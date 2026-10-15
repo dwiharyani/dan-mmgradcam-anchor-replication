@@ -1,0 +1,16 @@
+name: Python syntax and repository safety
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate Python syntax
+        run: python -m compileall -q scripts tools
+      - name: Check committed file allowlist
+        run: python tools/audit_repository.py --all

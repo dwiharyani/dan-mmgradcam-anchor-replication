@@ -1,0 +1,67 @@
+# Research data and patient-/record-level materials (NEVER COMMIT)
+data/
+datasets/
+raw/
+processed/
+splits/
+results/
+checkpoints/
+weights/
+models/
+logs/
+outputs/
+*.h5
+*.hdf5
+*.hdf
+*.keras
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.parquet
+*.feather
+*.csv
+*.tsv
+*.pkl
+*.pickle
+*.mat
+*.edf
+*.zip
+*.tar
+*.gz
+*.7z
+*.db
+*.sqlite*
+*.log
+*.out
+*.err
+# Allow only curated results figures, not raw images
+!figures/results/
+# Images are committed only from curated figures/ directory
+*.png
+*.jpg
+*.jpeg
+*.pdf
+!figures/**/*.png
+# Credentials + local environments
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
+# Do not accidentally publish local institutional paths or copies
+hpc_*/
+local_*/

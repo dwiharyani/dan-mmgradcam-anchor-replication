@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "independent_anchor_replication_exact_test_split",
+  "test_records": 1054,
+  "class_counts": {
+    "AFib": 222,
+    "GSVT": 222,
+    "SB": 388,
+    "SR": 222
+  },
+  "sha256_csv": "b70220d31b638c69c429b74c06db828efe5369c4410a669e4369e454d31eeb16",
+  "manifest_columns": [
+    "test_order_1d",
+    "test_order_2d",
+    "cohort_index",
+    "class_name",
+    "ecg_csv_filename",
+    "image_relative_path"
+  ],
+  "image_name_rule": "{class_name}/hasta_{cohort_index}.png",
+  "notes": [
+    "Public source filenames only; no ECG signal, ECG image, patient_id, or predictions included.",
+    "Test order 1D/2D may differ. Do NOT match representations by row position.",
+    "Preprocessing, class mapping and pretrained weights must also match for metric reproduction.",
+    "The 727 primary analysis subset requires predictions and temporal QC, not just this manifest."
+  ]
+}

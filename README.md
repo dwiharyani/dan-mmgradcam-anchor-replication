@@ -167,3 +167,13 @@ We acknowledge the original authors for the anchor MM-GradCAM study and architec
 ---
 
 <sub>Figures use the research palette: pastel pink · light blue · soft brown. See [license & attribution notice](LICENSE_NOTICE.md) before reusing code or figures.</sub>
+
+## Reproduce the exact 1,054-ECG held-out test set
+
+To reproduce the **independent anchor MM-GradCAM** evaluation, use the exact record-aligned test manifest (AFib 222, GSVT 222, SB 388, SR 222) and the same trained checkpoints. The original ECG datasets are **not hosted here**.
+
+- [Exact 1,054-record test manifest](reproducibility/test_split_1054.csv)
+- [Step-by-step guide for collaborators](docs/FRIEND_REPRODUCE_TESTSET.md)
+- [Trained models (GitHub Release v0.2.0)](https://github.com/dwiharyani/dan-mmgradcam-anchor-replication/releases/tag/v0.2.0-hpc-trained-models)
+
+Numerical preprocessing, label mapping and inference settings must also match; the fixed split alone does not guarantee identical metrics.

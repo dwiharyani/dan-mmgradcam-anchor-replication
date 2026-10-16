@@ -138,6 +138,12 @@ python scripts/plot_dan_module1_paper_figures.py \
 
 `run_dan_module1_exploratory.py` defaults to the historical timing-audit location. For a new workspace, pass `--validation <your-audit-output>/temporal_alignment_validation.csv` to match your actual audit location. The scripts also expect the **same local relative file structure** documented in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md). Never interpret positional within-class matching as verified patient identity.
 
+## Trained models, HPC scripts and results
+
+**[Download independently trained 1D/2D CNN weights from GitHub Releases](https://github.com/dwiharyani/dan-mmgradcam-anchor-replication/releases/tag/v0.2.0-hpc-trained-models)** · [HPC code + result documentation](docs/HPC_MODELS_AND_RESULTS.md) · [Aggregate JSON reports](reports/)
+
+The model assets are **not the anchor authors’ original weights**. Only curated HPC scripts and aggregate figures/reports are included; **the ECG dataset and record-level outputs are excluded**.
+
 ## Anchor paper & attribution
 
 **Primary anchor:** Murat Duranay, F., Murat, E., Yıldırım, Ö., *et al.* (2026). [*MM-GradCAM: an improved multimodal GradCAM method with 1D and 2D ECG data for detection of cardiac arrhythmia*](https://doi.org/10.1038/s41598-026-38654-w). *Scientific Reports*, **16**, Article 7919.

@@ -7,7 +7,7 @@ import sys
 import re
 
 ROOT=Path(__file__).resolve().parents[1]
-ALLOWED_ROOTS={'scripts','figures','docs','tools','.github'}
+ALLOWED_ROOTS={'scripts','figures','docs','tools','.github','reports'}
 ALLOWED_SINGLE={'README.md','requirements.txt','.gitignore','.gitattributes','LICENSE_NOTICE.md'}
 BANNED_EXT={'.csv','.tsv','.npy','.npz','.h5','.hdf5','.keras','.pt','.pth','.pkl','.pickle','.zip','.mat','.edf','.db','.sqlite','.parquet','.pem','.key','.env'}
 BANNED_NAMES={'id_rsa','id_ed25519','credentials.json','secrets.json'}

@@ -1,0 +1,151 @@
+{
+  "selected_code": [
+    "mmgradcam_alignment_preflight.py",
+    "plot_dan_module1_paper_figures.py",
+    "run_all_mmgradcam_alignment.py",
+    "run_anchor_mmgradcam_paper_figure.py",
+    "run_dan_module1_exploratory.py",
+    "run_dan_module1_projection_sensitivity.py",
+    "run_ecg_temporal_alignment_provisional.py",
+    "src/build_exact_pairs.py",
+    "src/build_final_1d.py",
+    "src/build_frozen_split.py",
+    "src/build_image_manifest.py",
+    "src/common.py",
+    "src/run_gradcam_1d_author_code.py",
+    "src/run_gradcam_2d_author_code.py",
+    "src/train_1d_author_code.py",
+    "src/train_2d_author_code.py",
+    "src/train_2d_author_directory.py",
+    "validate_ecg_temporal_alignment_hpc.py",
+    "verify_ecg_gradcam_pairs.py"
+  ],
+  "files": [
+    {
+      "dst": "scripts/hpc/mmgradcam_alignment_preflight.py",
+      "source": "mmgradcam_alignment_preflight.py",
+      "bytes": 7841,
+      "sha256": "d2fc22ca84122508847e756cfeadd43b18aba63af8a0c1fef144383aaf84a701"
+    },
+    {
+      "dst": "scripts/hpc/plot_dan_module1_paper_figures.py",
+      "source": "plot_dan_module1_paper_figures.py",
+      "bytes": 26590,
+      "sha256": "0bd1a710912510d75bba7d96ca0e49f3641f72269e7af598a8a4b4ccfa6f3d15"
+    },
+    {
+      "dst": "scripts/hpc/run_all_mmgradcam_alignment.py",
+      "source": "run_all_mmgradcam_alignment.py",
+      "bytes": 13541,
+      "sha256": "dbc8d07b4e7ef65b8e628d8ea50ed235121e4457f01e09fc853e73699f452121"
+    },
+    {
+      "dst": "scripts/hpc/run_anchor_mmgradcam_paper_figure.py",
+      "source": "run_anchor_mmgradcam_paper_figure.py",
+      "bytes": 14683,
+      "sha256": "c81f0f4f09e849b8eb784fb59b3d7fcfd88c28b87aef5dc5d77ffc19ad65eff6"
+    },
+    {
+      "dst": "scripts/hpc/run_dan_module1_exploratory.py",
+      "source": "run_dan_module1_exploratory.py",
+      "bytes": 18229,
+      "sha256": "660a6a8e172fbe953724dac98f3725acd158a545573b90cc11f9066cb43da823"
+    },
+    {
+      "dst": "scripts/hpc/run_dan_module1_projection_sensitivity.py",
+      "source": "run_dan_module1_projection_sensitivity.py",
+      "bytes": 14412,
+      "sha256": "65a2b1f2580afcd4a7bba999dd3c597e3ca7852ce9b18c40fa8ee9df4078e1bb"
+    },
+    {
+      "dst": "scripts/hpc/run_ecg_temporal_alignment_provisional.py",
+      "source": "run_ecg_temporal_alignment_provisional.py",
+      "bytes": 11868,
+      "sha256": "69b5939a1978f3cc993fdefd8ece76f726c14ea71e7019f67933a93073108580"
+    },
+    {
+      "dst": "scripts/hpc/src/build_exact_pairs.py",
+      "source": "src/build_exact_pairs.py",
+      "bytes": 2973,
+      "sha256": "ac081493a39ed242d646dcc99d5a9d1284c3428fcab9da64b1815417460de321"
+    },
+    {
+      "dst": "scripts/hpc/src/build_final_1d.py",
+      "source": "src/build_final_1d.py",
+      "bytes": 5214,
+      "sha256": "4e8d62c266837036fe1742830b950b65efc4740648e98e563a2060cf3b39fe01"
+    },
+    {
+      "dst": "scripts/hpc/src/build_frozen_split.py",
+      "source": "src/build_frozen_split.py",
+      "bytes": 4478,
+      "sha256": "4ff35b7e4606bbb6f3685a569acce977819124c0ead6e908c1a32ddfd57bbaa9"
+    },
+    {
+      "dst": "scripts/hpc/src/build_image_manifest.py",
+      "source": "src/build_image_manifest.py",
+      "bytes": 2361,
+      "sha256": "9641151ac3e45e2f876581c77c42959458ec62199c1135233bb99df949519bd1"
+    },
+    {
+      "dst": "scripts/hpc/src/common.py",
+      "source": "src/common.py",
+      "bytes": 1949,
+      "sha256": "3ca98a80fb572dc5b82129a4a8c25bb48a2cdb62ab6eafca7ea2a39444850555"
+    },
+    {
+      "dst": "scripts/hpc/src/run_gradcam_1d_author_code.py",
+      "source": "src/run_gradcam_1d_author_code.py",
+      "bytes": 14624,
+      "sha256": "a745e6315b014c06d36b662e8257fb0cf5a4921cbcc354a8de5d6ca40a3cbba6"
+    },
+    {
+      "dst": "scripts/hpc/src/run_gradcam_2d_author_code.py",
+      "source": "src/run_gradcam_2d_author_code.py",
+      "bytes": 8105,
+      "sha256": "431c6d8386fe1ccdbfb9d15214c19b411af459c3dbd396ddea8df42b1ad83b00"
+    },
+    {
+      "dst": "scripts/hpc/src/train_1d_author_code.py",
+      "source": "src/train_1d_author_code.py",
+      "bytes": 12606,
+      "sha256": "f85d30d67f940b3d9ba11a1eb105e021dfefd145ed1a5e26707c77849e3b76b9"
+    },
+    {
+      "dst": "scripts/hpc/src/train_2d_author_code.py",
+      "source": "src/train_2d_author_code.py",
+      "bytes": 8193,
+      "sha256": "671099331842c302276c842676b26e62e804e472ade87a214e7d5af62d704e9d"
+    },
+    {
+      "dst": "scripts/hpc/src/train_2d_author_directory.py",
+      "source": "src/train_2d_author_directory.py",
+      "bytes": 7921,
+      "sha256": "6fb23d1157241ef0464a9a677d385f274c589612b24f943f66156d800f11a32e"
+    },
+    {
+      "dst": "scripts/hpc/validate_ecg_temporal_alignment_hpc.py",
+      "source": "validate_ecg_temporal_alignment_hpc.py",
+      "bytes": 20643,
+      "sha256": "59ff5fd93d914583470639b4e1039226eaa64e6f54338dc9084832ccd3d4c9ba"
+    },
+    {
+      "dst": "scripts/hpc/verify_ecg_gradcam_pairs.py",
+      "source": "verify_ecg_gradcam_pairs.py",
+      "bytes": 6264,
+      "sha256": "00259f68dd846b6c2a0499b7770e67e2b4c88384416b923a31c9c1dcf20a2e53"
+    },
+    {
+      "dst": "model_assets/MMGradCAM_1d_trained_model.keras",
+      "source": "results/1d_author_code/trained_model.keras",
+      "bytes": 7423534,
+      "sha256": "b47e339d6003f0a065ae60eac9ea2c8aef9ff05fd9884f5d357aaba199374887"
+    },
+    {
+      "dst": "model_assets/MMGradCAM_2d_trained_model.keras",
+      "source": "results/2d_author_code/best_model.keras",
+      "bytes": 29655847,
+      "sha256": "049c51ebe13c8f764ccc67c981a239265f825ee3f44ed429807a9c00a03adc96"
+    }
+  ]
+}

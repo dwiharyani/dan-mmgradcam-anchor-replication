@@ -1,0 +1,5 @@
+cohort_index,class_name,image_width,image_height,waveform_x0,waveform_x1,valid_columns
+0,AFib,1080,288,58,1021,536
+11,GSVT,1080,288,58,1021,536
+1,SB,1080,288,58,1021,536
+2,SR,1080,288,58,1021,536

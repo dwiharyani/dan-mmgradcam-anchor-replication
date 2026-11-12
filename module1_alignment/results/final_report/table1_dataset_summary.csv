@@ -1,0 +1,6 @@
+measure,count
+Total test ECGs,1054
+Nondegenerate pairs,1033
+Degenerate pairs,21
+Both models correct,980
+Both correct and nondegenerate,962

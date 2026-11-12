@@ -65,3 +65,14 @@ __pycache__/
 # Do not accidentally publish local institutional paths or copies
 hpc_*/
 local_*/
+
+# Include Module 1 research results
+!module1_alignment/results/
+!module1_alignment/results/**/
+
+# Exclude large arrays and logs
+module1_alignment/results/**/*.npy
+module1_alignment/results/**/*.npz
+module1_alignment/results/**/*.out
+module1_alignment/results/**/*.err
+module1_alignment/results/**/*.log

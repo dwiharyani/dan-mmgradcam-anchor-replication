@@ -1,8 +1,5 @@
 # Reports
 
-- `module2_summary.json`: aggregate metrics and run configuration for full_v2.
-- `sensitivity_summary.csv` and `sensitivity_raw.csv`: available deletion/
-  sensitivity analysis tables.
+- `module2_summary.json`: aggregate metrics and run configuration for the full noise-stability run.
 
-Raw per-record attribution arrays, ECG signals, and model outputs are not
-included in this shareable package.
+Raw per-record attribution arrays, ECG signals and model outputs are not included.

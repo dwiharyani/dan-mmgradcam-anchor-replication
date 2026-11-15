@@ -9,7 +9,9 @@
 | Signal-image waveform correspondence | Audited across 1,054 | 810 AUTO_PASS; 244 manual-review according to heuristic QC, not ground-truth proof. |
 | Primary quantitative Module 1 analysis | 727 correctly classified, strict-QC ECGs | Provisional and conditional on selection; no causal claims. |
 | Projection sensitivity | 727 ECGs × 3 alternatives | Descriptive robustness only; x-time calibration not independently confirmed from source image-render code. |
-| Random-shift/null or Module 2 stability | Not complete | Do not claim as finished or experimentally supported. |
+| Random-shift/null test | Not complete | Do not claim as finished or experimentally supported. |
+| Module 2 noise stability | Run on 1,054 test ECGs (30 perturbations each), exploratory | Provisional scaler and re-rendered 2D images; settings not yet validated; see docs/RESULTS_AND_LIMITATIONS.md. |
+| Module 2 faithfulness (deletion) analysis | Under review | Not reported; do not claim faithfulness. |
 | Module 3 reliability-weighted method | Proposed, not complete | Do not claim clinical or predictive improvement. |
 
 No clinical validation, medical device functionality, prospective patient evaluation, or diagnostic recommendation is claimed. The analysis is a research illustration of interpretability comparisons.

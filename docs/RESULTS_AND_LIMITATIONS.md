@@ -16,6 +16,10 @@
 
 All 1,054 records were evaluable for the 1D, 2D, and joint analyses in this run.
 
+## Faithfulness analysis
+
+A deletion-based faithfulness analysis has been run on a subset but is not reported here; results will be added once reviewed. Nothing in this repository should be read as evidence of faithfulness.
+
 ## Interpretation
 
 The 1D branch has a higher median stability score in this exploratory run.
@@ -34,6 +38,5 @@ of faithfulness, causal importance, or clinical relevance.
 3. Perturbation magnitudes and count have not been validated on the validation split.
 4. Exploratory stability and deletion analyses do not establish faithfulness.
 
-Consult the aggregate JSON and CSV files for the numeric outputs available in
-this package. Figure captions and notebook cells should be checked against the
+Aggregate numbers are in `reports/module2_summary.json`. Figure captions should be checked against the
 final paper narrative before publication.

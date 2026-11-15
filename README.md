@@ -90,6 +90,10 @@ These describe low **observed cross-representation attribution correspondence un
 
 Widening the waveform mask from 6 to 24 px caused little change in these descriptive statistics; replacing the waveform-restricted projection with full-height averaging reduced the median rank correlation. Projection strategy is **not** equivalent to model explanation quality; quantitative conclusions remain exploratory.
 
+## Module 2 - noise stability (exploratory)
+
+Perturbs the raw Lead-II ECG (30 amplitude, drift and noise perturbations), regenerates both the 1D and 2D inputs, and measures prediction retention and per-branch explanation stability. Stability is not evidence of faithfulness; a faithfulness analysis is still being reviewed. Method: [docs/MODULE2_NOISE_STABILITY.md](docs/MODULE2_NOISE_STABILITY.md). Results and caveats: [docs/RESULTS_AND_LIMITATIONS.md](docs/RESULTS_AND_LIMITATIONS.md). Figures: [figures/](figures/).
+
 ## Reproducible code — curated, no ECG data
 
 ```text

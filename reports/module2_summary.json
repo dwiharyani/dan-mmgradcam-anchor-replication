@@ -1,0 +1,34 @@
+{
+  "module": "DAN Module 2 - noise stability (exploratory)",
+  "run": "full_v2",
+  "records": 1054,
+  "config": {
+    "perturbations_per_record": 30,
+    "amplitude_scales": [0.8, 0.9, 0.95, 1.05, 1.1, 1.2],
+    "baseline_drift": {"fractions_of_peak_to_peak": [0.05, 0.10], "frequency_hz": 0.3, "phases_per_level": 6},
+    "gaussian_noise": {"fractions_of_record_std": [0.05, 0.10], "seeds_per_level": 6},
+    "min_accepted_maps": 2,
+    "grid_columns": 600,
+    "waveform_columns_px": [58, 1021],
+    "acceptance": "per branch (own original prediction); joint set used for fused R"
+  },
+  "results": {
+    "evaluable_1d_2d_joint": [1054, 1054, 1054],
+    "mean_prr_1d": 0.9744,
+    "mean_prr_2d": 0.9758,
+    "median_S_1d": 0.8197,
+    "median_S_2d": 0.4687,
+    "median_R": 0.0747,
+    "corr_S1_S2": 0.221,
+    "branch_disagreement_rate": 0.0939,
+    "base_accuracy_1d_on_run": 0.9469,
+    "base_accuracy_2d_on_rerendered_images": 0.925,
+    "min_joint_accepted": 3
+  },
+  "caveats": [
+    "1D scaler recomputed from 9,592 records (original cohort 9,534); 1D test accuracy 0.9469 vs repository 0.9478.",
+    "2D images were re-rendered from raw Lead II; 2D accuracy 0.925 on re-rendered vs 0.9668 on real images.",
+    "Perturbation magnitudes and count are not yet validated on the validation split; convergence/deletion results are to be added.",
+    "Stability is not evidence of faithfulness."
+  ]
+}

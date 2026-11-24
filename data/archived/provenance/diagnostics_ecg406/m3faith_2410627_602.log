@@ -1,0 +1,32 @@
+2026-11-17 20:36:12.954693: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1794936973.381533 2021530 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1794936973.472063 2021530 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1794936974.542215 2021530 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1794936974.542343 2021530 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1794936974.542350 2021530 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1794936974.542357 2021530 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+OK      data/ECGData
+OK      data/ImageData-label2/label1
+OK      models/MMGradCAM_1d_trained_model.keras
+OK      models/MMGradCAM_2d_trained_model.keras
+2026-11-17 20:36:21.072968: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+TensorFlow 2.19.0 | GPUs: []
+repo already present
+ECG CSV files in folder: 10646 | test records: 1054
+{'SB': 388, 'AFib': 222, 'GSVT': 222, 'SR': 222}
+test columns: ['test_order_1d', 'test_order_2d', 'cohort_index', 'class_name', 'ecg_csv_filename', 'image_relative_path']
+No saved test signals to compare with; shape check only: (5000,)
+scaler loaded: (5000,) | PROVISIONAL - fitted on 9592 records, intended 9,534
+1D: (None, 5000, 1) -> (None, 4) | last Conv1D: conv1d_6
+2D: (None, 300, 600, 1) -> (None, 4) | last Conv2D: conv2d_5
+Module 2 v2 definitions loaded | geometric valid columns: 536 of 600
+ECG 406 | class=SR | 1D err=3.0195224e-10 | 2D err=5.6266785e-05
+Traceback (most recent call last):
+  File "/home/g202527350/mm_gradcam/module3_aligned/scripts/module3_faithfulness_v1.py", line 271, in <module>
+    main()
+  File "/home/g202527350/mm_gradcam/module3_aligned/scripts/module3_faithfulness_v1.py", line 208, in main
+    fail(f'2D baseline QC mismatch ECG {cid}: {e2:.8g}')
+  File "/home/g202527350/mm_gradcam/module3_aligned/scripts/module3_faithfulness_v1.py", line 30, in fail
+    raise RuntimeError(msg)
+RuntimeError: 2D baseline QC mismatch ECG 406: 5.6266785e-05

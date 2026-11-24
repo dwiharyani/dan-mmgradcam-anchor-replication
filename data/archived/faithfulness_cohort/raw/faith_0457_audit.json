@@ -1,0 +1,32 @@
+{
+  "cohort_index": 396,
+  "class_name": "SB",
+  "index": 457,
+  "strict_baseline_qc": true,
+  "matched30": true,
+  "baseline_1d_max_error": 1.1920928955078125e-07,
+  "baseline_2d_max_error": 3.203749656677246e-07,
+  "n_rows": 132,
+  "methods": [
+    "Fbase",
+    "Fmu_matched30",
+    "R",
+    "Rtrace_0p5",
+    "Rtrace_1p0",
+    "Rtrace_2p0"
+  ],
+  "fractions": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "block_samples": 50,
+  "random_repeats": 5,
+  "seed": 20261115,
+  "oneDNN_disabled": true,
+  "tensorflow_version": "2.19.0",
+  "protocol": "Module2 linear-interpolation deletion; paired 1D and re-rendered 2D"
+}

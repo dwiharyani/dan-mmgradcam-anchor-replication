@@ -1,0 +1,48 @@
+{
+  "status": "EXPLORATORY_ONLY_PENDING_FULL_TEMPORAL_CALIBRATION",
+  "total_pairs_in_full_test": 1054,
+  "pairs_evaluated_this_run": 1054,
+  "control_flow_counts": {
+    "PRIMARY_EXPLORATORY": 727,
+    "BOTH_CORRECT_BUT_QC_NOT_STRICT": 253,
+    "DIFFERENT_TARGET_NO_COMPARISON": 63,
+    "SAME_TARGET_BUT_NOT_BOTH_CORRECT": 11
+  },
+  "waveform_auto_pass": 810,
+  "strict_waveform_qc": 779,
+  "both_predictions_correct": 980,
+  "primary_selected": 727,
+  "primary_measured": 727,
+  "primary_processing_issues": 0,
+  "selected_by_class": {
+    "SB": 202,
+    "GSVT": 198,
+    "AFib": 185,
+    "SR": 142
+  },
+  "top_fraction": 0.15,
+  "qc_cutoffs": {
+    "median_abs_time_error_ms_max": 25.0,
+    "p95_abs_time_error_ms_max": 50.0,
+    "wrong_patient_margin_positive": true,
+    "auto_pass_required": true,
+    "both_class_predictions_correct_required": true
+  },
+  "projection": "2D CAM mean under blue-waveform mask dilated vertically; original ECG bitmap at 1080x288 resized onto CAM 600x300",
+  "1d_registration": "linear x0..x1 from independent waveform correspondence audit; assumes 0..10s; pending confirmation from original image creation code",
+  "normalization": "each 1D and 2D projected CAM separately min-max normalized over valid x columns",
+  "metric_restrictions": "Different classification targets and QC-ineligible records are not compared; NaN stored instead.",
+  "important_limitations": [
+    "Not reproduction of original author numerical agreement",
+    "Not quantitatively validated absolute time mapping",
+    "Grad-CAM 2D native resolution is 9x18; 300x600 map is interpolated",
+    "Auto-pass and cutoffs are QC rules, not a clinical gold standard",
+    "Geometric mean is a shared-saliency operator, not proof of faithfulness"
+  ],
+  "data_sources": {
+    "pairs": "splits/gradcam_test_pairs_verified.csv",
+    "time_qc": "results/temporal_validation_full_20261015_163719/temporal_alignment_validation.csv",
+    "CAM_1d": "results/gradcam_1d_author_code/heatmaps_1d.npy",
+    "CAM_2d": "results/gradcam_2d_author_code/heatmaps_2d_resized.npy"
+  }
+}

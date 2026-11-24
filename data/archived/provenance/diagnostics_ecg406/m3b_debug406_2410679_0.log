@@ -1,0 +1,36 @@
+ECG 406 index in Module3A: 603
+MODE=fresh
+2026-11-17 21:14:47.868744: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1794939287.920232 2900124 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1794939287.942396 2900124 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1794939288.054886 2900124 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1794939288.054988 2900124 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1794939288.054996 2900124 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1794939288.055002 2900124 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+OK      data/ECGData
+OK      data/ImageData-label2/label1
+OK      models/MMGradCAM_1d_trained_model.keras
+OK      models/MMGradCAM_2d_trained_model.keras
+2026-11-17 21:14:52.133682: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+TensorFlow 2.19.0 | GPUs: []
+repo already present
+ECG CSV files in folder: 10646 | test records: 1054
+{'SB': 388, 'AFib': 222, 'GSVT': 222, 'SR': 222}
+test columns: ['test_order_1d', 'test_order_2d', 'cohort_index', 'class_name', 'ecg_csv_filename', 'image_relative_path']
+No saved test signals to compare with; shape check only: (5000,)
+scaler loaded: (5000,) | PROVISIONAL - fitted on 9592 records, intended 9,534
+1D: (None, 5000, 1) -> (None, 4) | last Conv1D: conv1d_6
+2D: (None, 300, 600, 1) -> (None, 4) | last Conv2D: conv2d_5
+Module 2 v2 definitions loaded | geometric valid columns: 536 of 600
+DBG406 RGB_SHA: af7313080116b13feb103a2838058f559da6b4037da49cd5a3ed87a2ff996d19
+DBG406 INPUT_SHA: e7526b668e53f47a06acd4c10a8a027ce02855e4f2388cc1b56d986f8c489264
+DBG406 PROB: [0.04511405527591705, 0.3012298345565796, 0.0002733588917180896, 0.6533827781677246]
+DBG406 REF: [0.045129865407943726, 0.3012702763080597, 0.0002733806031756103, 0.6533265113830566]
+DBG406 ERROR: 5.626678466796875e-05
+Traceback (most recent call last):
+  File "/home/g202527350/mm_gradcam/module3_aligned/scripts/m3b_generate_trace_support_debug406.py", line 138, in <module>
+    if __name__=='__main__':main()
+  File "/home/g202527350/mm_gradcam/module3_aligned/scripts/m3b_generate_trace_support_debug406.py", line 100, in main
+    raise RuntimeError(f'ECG {cid} 2D baseline probabilities mismatch: max error={err:.6g}. STOP: do not mix pipelines')
+RuntimeError: ECG 406 2D baseline probabilities mismatch: max error=5.62668e-05. STOP: do not mix pipelines

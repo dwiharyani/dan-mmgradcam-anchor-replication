@@ -1,0 +1,52 @@
+{
+  "config": {
+    "version": "v2-module1-aligned",
+    "FS": 500.0,
+    "DRIFT_HZ": 0.3,
+    "SCALES": [
+      0.8,
+      0.9,
+      0.95,
+      1.05,
+      1.1,
+      1.2
+    ],
+    "DRIFTS": [
+      0.05,
+      0.1
+    ],
+    "DRIFT_PHASES": [
+      0.0,
+      1.0471975511965976,
+      2.0943951023931953,
+      3.141592653589793,
+      4.1887902047863905,
+      5.235987755982988
+    ],
+    "NOISES": [
+      0.05,
+      0.1
+    ],
+    "NOISE_SEEDS": 6,
+    "X0": 58,
+    "X1": 1021,
+    "W": 600,
+    "MASK_DILATE_Y": 6,
+    "COVERAGE_MIN": 0.75,
+    "MIN_ACCEPTED": 2
+  },
+  "n_records": 1054,
+  "done": 1054,
+  "time": "2026-11-17T08:23:58",
+  "tf": "2.21.0",
+  "batch_sizes": {
+    "1d": 32,
+    "2d": 8
+  },
+  "force_cpu": {
+    "1d": false,
+    "2d": false
+  },
+  "scaler_n_fit": 9534,
+  "note": "Scaler: friend-provided scaler standard_scaler.npz; 1D test accuracy 999/1054 (Dwi README: 999/1054). 2D rendering not fully verified; perturbation magnitudes not validated"
+}

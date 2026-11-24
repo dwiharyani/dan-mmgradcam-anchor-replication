@@ -1,0 +1,21 @@
+{
+  "experiment": "Module3A from s9534 archived maps",
+  "scaler_n_fit_reported": 9534,
+  "source_note": "Scaler: friend-provided scaler standard_scaler.npz; 1D test accuracy 999/1054 (Dwi README: 999/1054). 2D rendering not fully verified; perturbation magnitudes not validated",
+  "n_module2": 1054,
+  "n_module1_frozen_primary": 727,
+  "n_primary_eligible_m2": 694,
+  "n_primary_matched30_clean": 551,
+  "n_m2_both_correct": 939,
+  "n_m1_m2_mask_match": 1054,
+  "max_R_formula_error": 3.320345853818907e-08,
+  "median_r_mean_eligible": 0.0775195062160492,
+  "median_matched30_ratio_r_over_mu": 0.4975046370768719,
+  "n_m1_baseline_1d_audited": 1054,
+  "limitations": [
+    "R and baselines are Module2 on-trace (rerendered image) maps, NOT Gaussian G12 Module1 maps",
+    "same scaler provenance in Module2 metadata does not by itself prove 2D spatial pipeline equality",
+    "No-stability matched Fmu is valid only when 30/30 perturbations are accepted by BOTH branches",
+    "Map effect metrics are not faithfulness tests"
+  ]
+}

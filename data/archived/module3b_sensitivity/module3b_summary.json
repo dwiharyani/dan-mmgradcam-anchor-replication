@@ -1,0 +1,17 @@
+{
+  "n_trace_records": 694,
+  "n_module3a_available": 694,
+  "lambda_values": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "source": "F_trace computed from SAME Module2 2D CNN/renderer baseline spatial CAM",
+  "primary_method": "Module3A R, unchanged",
+  "hypothesis": "Multiplying R by waveform-corridor spatial mass fraction may focus explanations; must test against M3A with same deletion protocol",
+  "limitations": [
+    "R_trace <= R pointwise by construction; lower absolute intensity alone is not evidence of greater reliability",
+    "Source F_trace is an unperturbed 2D spatial CAM feature, not a new stability estimate",
+    "Need evaluate paired deletion, sanity, and sensitivity; do not claim performance enhancement from descriptive map metrics"
+  ]
+}

@@ -1,0 +1,33 @@
+ECG 406 index in Module3A: 603
+MODE=warm
+2026-11-17 21:14:55.033205: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1794939295.048853 2585593 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1794939295.053040 2585593 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1794939295.065201 2585593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1794939295.065243 2585593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1794939295.065249 2585593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1794939295.065255 2585593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+OK      data/ECGData
+OK      data/ImageData-label2/label1
+OK      models/MMGradCAM_1d_trained_model.keras
+OK      models/MMGradCAM_2d_trained_model.keras
+2026-11-17 21:14:58.875068: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+TensorFlow 2.19.0 | GPUs: []
+repo already present
+ECG CSV files in folder: 10646 | test records: 1054
+{'SB': 388, 'AFib': 222, 'GSVT': 222, 'SR': 222}
+test columns: ['test_order_1d', 'test_order_2d', 'cohort_index', 'class_name', 'ecg_csv_filename', 'image_relative_path']
+No saved test signals to compare with; shape check only: (5000,)
+scaler loaded: (5000,) | PROVISIONAL - fitted on 9592 records, intended 9,534
+1D: (None, 5000, 1) -> (None, 4) | last Conv1D: conv1d_6
+2D: (None, 300, 600, 1) -> (None, 4) | last Conv2D: conv2d_5
+Module 2 v2 definitions loaded | geometric valid columns: 536 of 600
+DBG406 RGB_SHA: 5b5e150b1e1037d9a91900d54f4b30e4b774189742746715ed699d9c1a7665b3
+DBG406 INPUT_SHA: 2a692856d0c9750c00edf8e92f5c2a3a575eef921d8663a38db5d224c38a2b39
+DBG406 PROB: [0.04512995481491089, 0.30127042531967163, 0.00027338063227944076, 0.6533262729644775]
+DBG406 REF: [0.045129865407943726, 0.3012702763080597, 0.0002733806031756103, 0.6533265113830566]
+DBG406 ERROR: 2.384185791015625e-07
+Computed F_trace for 4/4 ECGs; last ID=406
+OUTPUT: /home/g202527350/mm_gradcam/module3_aligned/outputs/m3b_406_debug/warm.npz
+PASS MODE=warm

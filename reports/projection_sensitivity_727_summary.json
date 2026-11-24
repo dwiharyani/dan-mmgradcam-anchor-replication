@@ -1,0 +1,77 @@
+{
+  "status": "EXPLORATORY_PROJECTION_SENSITIVITY_COMPLETE_NOT_FULLY_TIME_CALIBRATED",
+  "pilot_source": "results/dan_module1_full_20261015_191138/module1_primary_exploratory.csv",
+  "pilot_ecg_count": 727,
+  "methods": [
+    "waveform_mask_6px",
+    "waveform_mask_24px",
+    "full_height_mean"
+  ],
+  "same_ecg_and_same_valid_x_for_all_methods": true,
+  "baseline_original_metrics_reproduced": true,
+  "max_absolute_baseline_metric_difference": 9.8879238130678e-17,
+  "mask_dilation_300px_grid": {
+    "baseline": 6,
+    "broader": 24
+  },
+  "top_fraction": 0.15,
+  "x0_assumed": 58,
+  "x1_assumed": 1021,
+  "per_method_median_metrics": {
+    "waveform_mask_6px": {
+      "mean_agreement_A": 0.1516040712594986,
+      "mean_disagreement_D": 0.4441804885864258,
+      "spearman": 0.0856271584044798,
+      "pearson": 0.07979984824558888,
+      "dice_top_fraction": 0.1728395061728395,
+      "jaccard_top_fraction": 0.0945945945945946,
+      "weighted_jaccard": 0.15683832379859283
+    },
+    "waveform_mask_24px": {
+      "mean_agreement_A": 0.1514180302619934,
+      "mean_disagreement_D": 0.4426502585411072,
+      "spearman": 0.08826962069870739,
+      "pearson": 0.07674981877876913,
+      "dice_top_fraction": 0.1728395061728395,
+      "jaccard_top_fraction": 0.0945945945945946,
+      "weighted_jaccard": 0.15791924686857295
+    },
+    "full_height_mean": {
+      "mean_agreement_A": 0.1555725336074829,
+      "mean_disagreement_D": 0.4778929650783539,
+      "spearman": 0.01574485108931123,
+      "pearson": 0.025212373122662637,
+      "dice_top_fraction": 0.16049382716049382,
+      "jaccard_top_fraction": 0.087248322147651,
+      "weighted_jaccard": 0.1478839216442458
+    }
+  },
+  "per_method_vs_baseline_median_change": {
+    "waveform_mask_24px": {
+      "mean_agreement_A": 9.579956531524658e-05,
+      "mean_disagreement_D": -0.00011816620826721191,
+      "spearman": 0.0004182290332645777,
+      "pearson": 0.0002300361001903728,
+      "dice_top_fraction": 0.0,
+      "jaccard_top_fraction": 0.0,
+      "weighted_jaccard": 0.00031216824855670455
+    },
+    "full_height_mean": {
+      "mean_agreement_A": 0.002856016159057617,
+      "mean_disagreement_D": 0.03937876224517822,
+      "spearman": -0.0759119624261052,
+      "pearson": -0.05400135990896689,
+      "dice_top_fraction": -0.012345679012345678,
+      "jaccard_top_fraction": -0.007248322147651004,
+      "weighted_jaccard": -0.008371828652527502
+    }
+  },
+  "important_limits": [
+    "This is a sensitivity test on the fixed pilot cohort; not 1054-case result",
+    "2D Grad-CAM native resolution 9x18 is interpolated to 300x600",
+    "Shared ECG timeline assumes unverified image-generation mapping",
+    "Predicted class must agree; pilot source contains both-correct, strict-QC cases",
+    "Differences in metrics can originate from mask geometry, 2D model, or interpolation; this test does not prove causality or faithfulness",
+    "Each projection is min-max normalized on identical valid columns prior to scoring"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-11-17T18:54:10.872895+00:00",
+  "faithfulness_success": 692,
+  "faithfulness_failed_ecg": 406,
+  "failed_index": 602,
+  "module3a_eligible": 694,
+  "module3b_strict": 693,
+  "module3b_sensitivity": 694,
+  "source_git_module2": {
+    "unavailable": "[Errno 2] No such file or directory: 'git'"
+  },
+  "source_git_module3": {
+    "unavailable": "[Errno 2] No such file or directory: 'git'"
+  },
+  "included_files": 1736,
+  "model_checkpoints_included": false,
+  "raw_ecg_included": false
+}

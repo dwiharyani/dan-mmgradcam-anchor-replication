@@ -1,0 +1,27 @@
+{
+ "source_repository": "https://github.com/dwiharyani/dan-mmgradcam-anchor-replication",
+ "source_branch": "module1-nahida",
+ "source_commit": "f5504c1",
+ "files": {
+  "agreement_metrics_0px.csv": {
+   "source": "module1_alignment/results/alignment_0px/agreement_metrics.csv",
+   "sha256": "226e53adbc1c4c37ad77348e9705e14ac15f24cce65c592422dbb4ce5080caa8"
+  },
+  "shift_metrics.csv": {
+   "source": "module1_alignment/results/gradcam_shift_sensitivity/shift_metrics.csv",
+   "sha256": "747247281fa4f7209ffd9c05c0f419129ffeb51417a0c27c0e623c32a4305e89"
+  },
+  "projection_metrics.csv": {
+   "source": "module1_alignment/results/projection_sensitivity/projection_metrics.csv",
+   "sha256": "0804123b6428cb74805cf7795af19ef4c623b64bca448c666d6eae570da29457"
+  },
+  "temporal_validation_100.csv": {
+   "source": "module1_alignment/results/temporal_validation_100/signal_image_correspondence.csv",
+   "sha256": "4510a58fab2f45fdd56fc4e9f2b1c45c46182281047b595f1500fbebd03be8c5"
+  },
+  "representative_attribution_traces.png": {
+   "source": "module1_alignment/results/publication_figures/07_representative_attribution_traces.png",
+   "sha256": "6de8c630cce61161f53e7cad42977f1b6ccacbf5f496d84f752785535d2c1573"
+  }
+ }
+}

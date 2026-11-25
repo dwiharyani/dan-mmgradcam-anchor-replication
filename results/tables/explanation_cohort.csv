@@ -1,0 +1,5 @@
+quantity,n,% of 1054
+correct in both CNNs (original images),980,92.97912713472486
+2D correct on re-rendered images,975,92.50474383301707
+2D re-rendered prediction = original prediction,996,94.49715370018976
+"primary explanation cohort (both correct, re-rendered)",939,89.08918406072107

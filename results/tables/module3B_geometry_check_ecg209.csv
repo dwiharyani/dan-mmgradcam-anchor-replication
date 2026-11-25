@@ -1,0 +1,8 @@
+,value
+"Spearman(corridor height, F_trace)",0.496
+"mean F_trace, tallest 10% columns",0.581
+"mean F_trace, other columns",0.122
+share of top-10% columns of R in tallest 10%,0.0
+"share of top-10% columns of R_trace, lambda=0.5 in tallest 10%",0.167
+"share of top-10% columns of R_trace, lambda=1 in tallest 10%",0.37
+"share of top-10% columns of R_trace, lambda=2 in tallest 10%",0.648

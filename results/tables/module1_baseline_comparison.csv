@@ -1,0 +1,3 @@
+method,n,median weighted Jaccard,median Spearman,median Dice top-15%
+binary-mask min–max (Module 1 branch),1033,0.1536833456227893,0.0901972431082331,0.1728395061728395
+intensity-aware mass (this work),939,0.2668179541177051,0.07125220901143133,0.16049382716049382

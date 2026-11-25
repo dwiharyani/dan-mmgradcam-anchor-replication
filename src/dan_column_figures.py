@@ -304,3 +304,45 @@ def fig_module1_sensitivity_column(shift_summary, proj_boot, out):
         ax.set_ylim(0, .48); ax.set_title('(b) Projection mask', loc='left')
         fig.tight_layout(w_pad=.8)
         save(fig, out, 'col_module1_sensitivity')
+
+
+# ------------------------------------------------------------------ Module 1 case
+def fig_module1_case_column(z, i, mask, out):
+    """ECG 209 drawn from the archived maps base1/base2 (unperturbed Grad-CAM, aligned 1D, on-trace 2D)."""
+    global MASK
+    MASK = mask
+    from dan_figures import mass
+    v = z['valid_600'][i].astype(bool)
+    g1, g2 = z['base1'][i][v], z['base2'][i][v]
+    p, q = mass(g1), mass(g2)
+    sh = np.minimum(p, q)
+    r = (p - q) / (p + q + 1e-12)
+    sal = topk(p, .15) | topk(q, .15)
+    cat = np.zeros(p.size)
+    cat[sal & (r > 1 / 3)], cat[sal & (r < -1 / 3)], cat[sal & (np.abs(r) <= 1 / 3)] = 1, 2, 3
+    poly, W = polyline(mask), mask.shape[1]
+    with small_type():
+        fig = plt.figure(figsize=(WIDTH, 4.35))
+        gs = fig.add_gridspec(5, 1, height_ratios=[1, 1, 1, 1, .8], hspace=.62)
+        a = fig.add_subplot(gs[0]); wave(a, poly, W, g1 / g1.max(), CM1, 1.0, lw=(.35, 1.9)); _label(a, '1D', C1)
+        a.set_title('(a) 1D Grad-CAM intensity on the waveform', loc='left'); _cbar(fig, a, CM1, 1, '$g_1$')
+        b = fig.add_subplot(gs[1]); wave(b, poly, W, g2 / g2.max(), CM2, 1.0, lw=(.35, 1.9)); _label(b, '2D', C2)
+        b.set_title('(b) 2D intensity received by the waveform ($\\pm6$ px)', loc='left'); _cbar(fig, b, CM2, 1, '$g_2$')
+        c = fig.add_subplot(gs[2]); wave(c, poly, W, sh / sh.max(), CMB, 1.0, lw=(.35, 2.2)); _label(c, 'shared', CB)
+        c.set_title(f'(c) shared intensity $\\min(p_u,q_u)$; $O={sh.sum():.3f}$', loc='left'); _cbar(fig, c, CMB, 1, 'relative')
+        d = fig.add_subplot(gs[3])
+        wave(d, poly, W, cat, None, None, cat={0: (CGREY, .4), 3: (CB, 1.7), 2: (C2, 1.7), 1: (C1, 1.7)}); _label(d, 'dir.', INK)
+        d.set_title('(d) direction', loc='left'); _spacer(fig, d)
+        d.legend(handles=[Line2D([], [], color=C1, lw=1.7, label='1D-dominant'), Line2D([], [], color=C2, lw=1.7, label='2D-dominant'),
+                          Line2D([], [], color=CB, lw=1.7, label='balanced')],
+                 ncol=3, frameon=False, loc='lower right', bbox_to_anchor=(1.0, .93), handlelength=1.0, columnspacing=.7,
+                 handletextpad=.3, fontsize=5.4)
+        e = fig.add_subplot(gs[4]); t = np.arange(p.size) * 10 / p.size
+        e.fill_between(t, 0, sh, color=CB, alpha=.35, lw=0, label='shared')
+        e.plot(t, p, color=C1, lw=.6, label='1D mass $p_u$'); e.plot(t, q, color=C2, lw=.8, label='2D mass $q_u$')
+        e.set_xlim(0, 10); e.set_ylim(0, max(p.max(), q.max()) * 1.45)
+        e.spines[['top', 'right']].set_visible(False)
+        e.set_xlabel('time (s)', labelpad=1); e.set_ylabel('mass', labelpad=1)
+        e.legend(ncol=3, frameon=False, loc='upper left', bbox_to_anchor=(0, 1.08), handlelength=1.2, columnspacing=.9)
+        e.set_title('(e) attribution mass on the common time axis', loc='left', pad=6); _spacer(fig, e)
+        save(fig, out, 'col_module1_case209')

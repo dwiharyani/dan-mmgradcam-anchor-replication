@@ -1,0 +1,5 @@
+class_name,original_mean_agreement,shared_mass,original_weighted_jaccard,mass_weighted_jaccard,original_mean_disagreement,total_variation
+AFib,3.0,3.0,3.0,3.0,4.0,2.0
+GSVT,2.0,2.0,2.0,2.0,1.0,3.0
+SB,4.0,4.0,4.0,4.0,2.0,1.0
+SR,1.0,1.0,1.0,1.0,3.0,4.0

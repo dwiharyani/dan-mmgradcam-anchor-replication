@@ -1,0 +1,2 @@
+n,mean_difference_percentage_points,median_difference_percentage_points,median_ci_lower,median_ci_upper,wilcoxon_statistic,p_value
+1040,3.034945464982779,2.985074626865675,2.9850746268656696,3.1716417910447783,17162.5,2.944107789949688e-149

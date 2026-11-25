@@ -1,0 +1,12 @@
+MODULE 1 - FINAL EXPERIMENTAL SUMMARY
+============================================================
+Original cohort: 1054
+Original nondegenerate pairs: 1033
+Mass-valid pairs: 1040
+Mean shared mass: 0.411053
+Median shared mass: 0.419622
+Median 1D entropy: 0.843979
+Median 2D entropy: 0.981874
+Configurations favoring 1D dominance: 16
+Configurations favoring 2D dominance: 9
+Best alignment shifts: {1: 100}

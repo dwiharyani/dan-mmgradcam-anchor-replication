@@ -17,8 +17,6 @@ outputs/
 *.pt
 *.pth
 *.ckpt
-*.npy
-*.npz
 *.parquet
 *.feather
 *.csv

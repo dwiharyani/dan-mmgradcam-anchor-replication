@@ -69,8 +69,6 @@ local_*/
 !module1_alignment/results/**/
 
 # Exclude large arrays and logs
-module1_alignment/results/**/*.npy
-module1_alignment/results/**/*.npz
 module1_alignment/results/**/*.out
 module1_alignment/results/**/*.err
 module1_alignment/results/**/*.log

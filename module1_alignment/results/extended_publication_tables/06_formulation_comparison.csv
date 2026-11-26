@@ -1,0 +1,4 @@
+Comparison,N,Pearson,Spearman
+Agreement vs shared mass,1040,0.8669731993321379,0.882963197879525
+Original vs mass Jaccard,1033,0.7449892764177052,0.7286142472271373
+Disagreement vs total variation,1040,-0.3814476125207294,-0.2734160043815471

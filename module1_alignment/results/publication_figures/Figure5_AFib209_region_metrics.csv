@@ -1,0 +1,3 @@
+cohort_index,class_name,region,start_seconds,end_seconds,mean_agreement,mean_disagreement
+209,AFib,Highest observed shared attribution,7.065420560747664,7.644859813084112,0.27324476654757746,0.4317240733653307
+209,AFib,Highest observed disagreement,2.9158878504672896,3.4953271028037385,0.03324189700651914,0.8601754987612367

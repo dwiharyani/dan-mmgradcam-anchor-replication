@@ -1,0 +1,2 @@
+n,median_entropy_1d,median_entropy_2d,median_paired_difference,ci_lower,ci_upper,wilcoxon_statistic,wilcoxon_p_value,pct_2d_higher_entropy
+1040,0.8439792939511062,0.9818735787113049,0.12903239132191802,0.12561038649398715,0.1324619309263222,10529.0,8.787105049225678e-159,97.5

@@ -1,0 +1,5 @@
+cohort_index,class_name,target_idx,ecg_csv_filename,image_relative_path
+0,AFib,0,MUSE_20180113_171327_27000.csv,AFib/hasta_0.png
+11,GSVT,1,MUSE_20180113_135023_96000.csv,GSVT/hasta_11.png
+1,SB,2,MUSE_20180112_073319_29000.csv,SB/hasta_1.png
+2,SR,3,MUSE_20180111_165520_97000.csv,SR/hasta_2.png

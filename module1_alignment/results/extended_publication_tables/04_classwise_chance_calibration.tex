@@ -1,0 +1,22 @@
+\begin{table}[t]
+\caption{Class-wise observed and mispaired agreement with Holm-adjusted empirical p-values.}
+\label{tab:04_classwise_chance_calibration}
+\begin{tabular}{llrrrrrl}
+\toprule
+Class & Metric & N & Actual median & Null median & Difference & Above null95 (\%) & Adjusted p \\
+\midrule
+AFib & Shared mass & 221 & 0.4170 & 0.3927 & 0.0243 & 10.8597 & 0.0120 \\
+AFib & Min-max agreement & 221 & 0.1318 & 0.1226 & 0.0092 & 5.4299 & 0.0120 \\
+AFib & Dice (top 15\%) & 221 & 0.1852 & 0.1481 & 0.0370 & 10.8597 & 0.0120 \\
+GSVT & Shared mass & 210 & 0.4377 & 0.4378 & -0.0001 & 9.5238 & 0.5275 \\
+GSVT & Min-max agreement & 210 & 0.1573 & 0.1533 & 0.0040 & 5.7143 & 0.2478 \\
+GSVT & Dice (top 15\%) & 203 & 0.1605 & 0.1481 & 0.0123 & 9.8522 & 0.3596 \\
+SB & Shared mass & 388 & 0.3814 & 0.3693 & 0.0120 & 8.7629 & 0.0120 \\
+SB & Min-max agreement & 388 & 0.1314 & 0.1255 & 0.0059 & 9.7938 & 0.0120 \\
+SB & Dice (top 15\%) & 388 & 0.1605 & 0.1481 & 0.0123 & 8.2474 & 0.3996 \\
+SR & Shared mass & 221 & 0.4700 & 0.4333 & 0.0368 & 18.5520 & 0.0120 \\
+SR & Min-max agreement & 221 & 0.1684 & 0.1550 & 0.0134 & 10.4072 & 0.0120 \\
+SR & Dice (top 15\%) & 221 & 0.1975 & 0.1481 & 0.0494 & 16.2896 & 0.0120 \\
+\bottomrule
+\end{tabular}
+\end{table}
